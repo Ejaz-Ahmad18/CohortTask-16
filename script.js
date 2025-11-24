@@ -1,6 +1,5 @@
-var h1=document.querySelector('h1')
-var btn=document.querySelector('button')
-
+var h1 = document.querySelector("h1");
+var btn = document.querySelector("button");
 
 // btn.addEventListener('click', function(){
 //     h1.innerHTML='Changing user'
@@ -21,22 +20,14 @@ var btn=document.querySelector('button')
 
 // },5000)
 
-let a=0
-btn.addEventListener('click', function(){
-    
-   var b= setInterval(function(){
-    h1.innerHTML=(a)
-    a++
-  },100)
+let a = 0;
+btn.addEventListener("click", function () {
+  var b = setInterval(function () {
+    h1.innerHTML = a;
+    a++;
+  }, 100);
 
-  setTimeout(()=>{
-clearInterval(b)
-
-},5000)
-})
-
-  
-
-  
-
-
+  setTimeout(() => {
+    clearInterval(b);
+  }, 5000);
+});
